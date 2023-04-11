@@ -93,7 +93,7 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
               padding: EdgeInsets.symmetric(horizontal: 30),
               width: double.infinity,
               child: Text(
-                'IDR ${widget._product.price.toStringAsFixed(0)}',
+                '${widget._product.price.toStringAsFixed(0)} VNĐ',
                 style: TextStyle(
                   color: Colors.grey[700],
                   fontSize: 16,

@@ -66,10 +66,10 @@ class CartListItem extends StatelessWidget {
                 FittedBox(child: Text('Quantity: ${_cart.quantity}')),
                 FittedBox(
                     child:
-                        Text('Price: IDR ${_cart.price.toStringAsFixed(0)}')),
+                        Text('Price: ${_cart.price.toStringAsFixed(0)} VNĐ')),
                 FittedBox(
                     child: Text(
-                        'Total: IDR ${(_cart.quantity * _cart.price).toStringAsFixed(0)}')),
+                        'Total: ${(_cart.quantity * _cart.price).toStringAsFixed(0)} VNĐ')),
               ],
             ),
             trailing: IconButton(

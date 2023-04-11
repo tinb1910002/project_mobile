@@ -26,7 +26,7 @@ class _OrderListItemState extends State<OrderListItem> {
       child: Column(
         children: [
           ListTile(
-            title: Text('IDR ${widget._order.amount.toStringAsFixed(0)}'),
+            title: Text('${widget._order.amount.toStringAsFixed(0)} VNĐ'),
             subtitle: Text(
                 DateFormat('dd MMM yyyy, hh:mm').format(widget._order.date)),
             trailing: IconButton(
@@ -58,7 +58,7 @@ class _OrderListItemState extends State<OrderListItem> {
                         ),
                       ),
                       Text(
-                        '${widget._order.carts[i].quantity.toString()} x IDR ${widget._order.carts[i].price.toStringAsFixed(0)}',
+                        '${widget._order.carts[i].quantity.toString()} x ${widget._order.carts[i].price.toStringAsFixed(0)} VNĐ ',
                         style: TextStyle(
                           fontSize: 16,
                           color: Colors.grey,

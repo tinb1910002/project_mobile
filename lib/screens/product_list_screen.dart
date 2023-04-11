@@ -28,6 +28,10 @@ class _ProductListScreenState extends State<ProductListScreen> {
         title: Text('MyShop'),
         actions: [
           IconButton(
+            icon: Icon(Icons.search),
+            onPressed: () {},
+          ),
+          IconButton(
             icon: Icon(Icons.shopping_cart),
             onPressed: () {
               Navigator.of(context).pushNamed(CartListScreen.routeName);

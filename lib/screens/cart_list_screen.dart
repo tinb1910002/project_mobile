@@ -56,7 +56,7 @@ class _CartListScreenState extends State<CartListScreen> {
                               Spacer(),
                               Chip(
                                 label: Text(
-                                  'IDR ${Cart.totalAmountByListOfCart(_carts).toStringAsFixed(0)}',
+                                  ' ${Cart.totalAmountByListOfCart(_carts).toStringAsFixed(0)} VNĐ',
                                   style: TextStyle(
                                       color:
                                           Theme.of(context).primaryColorDark),

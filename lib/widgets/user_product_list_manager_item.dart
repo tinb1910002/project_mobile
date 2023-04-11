@@ -17,7 +17,7 @@ class UserProductListManagerItem extends StatelessWidget {
         ListTile(
           title: Text(_product.title),
           subtitle: Text(
-            'IDR ${_product.price.toStringAsFixed(0)}',
+            '${_product.price.toStringAsFixed(0)} VNĐ ',
             textAlign: TextAlign.start,
           ),
           leading: Container(
