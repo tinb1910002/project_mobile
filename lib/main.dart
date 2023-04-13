@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
                         .copyWith(secondary: Colors.lightGreenAccent),
               ),
               home: auth.isAuth
-                  ? ProductListScreen()
+                  ? HomePage()
                   : FutureBuilder(
                       future: auth.tryAutoLogin(),
                       builder: (context, dataSnapshot) {

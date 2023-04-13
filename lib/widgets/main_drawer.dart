@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:my_shop_app/models/auth.dart';
 import 'package:my_shop_app/screens/notifications.dart';
 import 'package:my_shop_app/screens/order_list_screen.dart';
+import 'package:my_shop_app/screens/product_list_screen.dart';
 import 'package:my_shop_app/screens/user_product_list_manager_screen.dart';
 import 'package:my_shop_app/screens/homepage.dart';
 import 'package:provider/provider.dart';
@@ -26,7 +27,8 @@ class MainDrawer extends StatelessWidget {
           ListTile(
             leading: Icon(Icons.shop),
             title: Text('Shop'),
-            onTap: () => Navigator.of(context).pushReplacementNamed('/'),
+            onTap: () => Navigator.of(context)
+                .pushReplacementNamed(ProductListScreen.routeName),
           ),
           ListTile(
             leading: Icon(Icons.payment),
